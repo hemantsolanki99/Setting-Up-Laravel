@@ -1,0 +1,19 @@
+How to upload a file to github from linux
+
+1. Open your project folder and open terminal there
+  else
+  Open terminal and navigate to the project directory
+
+2. Follow below commands:
+
+git init
+git add . or git add -all
+git commit -m 'First Commit'
+git remote add origin 'your repository address'
+  ex. :  git remote add origin https://github.com/hemantsolanki99/Setting-Up-Laravel
+git remote -v
+git push origin master
+    enter username and password of your github account
+  if this says any error like "failed to push some refs to 'https://github.com/username/project-name' etc. "
+  then use the below command.
+ git push --force origin master
