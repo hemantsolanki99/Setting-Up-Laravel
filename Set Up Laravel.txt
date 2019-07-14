@@ -1,0 +1,27 @@
+First create a new folder named websites or any desired name at your desired storage location.
+In my case I am creating it in /home/hemant. hemant is my username
+Now your new path will be /home/hemant/websites
+
+
+
+1. First of all go to the /opt/lampp/etc
+   Change the Document Root from 
+
+DocumentRoot "/opt/lampp/htdocs"
+<Directory "/opt/laampp/htdocs">
+
+  to 
+
+DocumentRoot "/home/hemant/websites"
+<Directory "/home/hemant/websites">
+
+and save it.
+
+
+2. Now go to your new folder websites
+  open terminal here.
+
+Now in terminal write code 
+
+composer create-project --prefer-dist laravel/laravel cms(your project folder name)
+  here cms is the project folder name change it with your desired project name
